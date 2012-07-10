@@ -1,0 +1,23 @@
+> See [this blog post](http://www.vladstudio.com/blog/entry.php?130) for more details and discussion.
+
+Some time ago, I published my method of saving a wallpaper in multiple sizes, using "bash" scripting language. Please read the original post here and more recent discussion here.
+
+Recently, I revised my bash script, and I wanted to share the updated code with you. Maybe you will find it useful. It has comments inside, however, to fully understand what is going on, you will want to learn a bit about bash.
+
+I removed actual file and folder names, you will need to replace empty variables with actual values. Also, this script does a lot of things you will probably won't need, but I leave them as is, in case you're curious (feel free to modify it to your needs and remove all unnecessary parts).
+
+I use this script with Ubuntu, it may well work on other systems, but I did not test. Requirements:
+
+* imagemagick ( sudo apt-get install imagemagick )
+* python
+* nice (for minimize CPU usage). To not use "nice", find 'nice -n 19 convert' and replace it with simply 'convert'.
+
+As seen in the code, the source files I use are:
+
+* src-8000x5000.jpg for 1 monitor
+* src-8000x3000.jpg for 2 monitors
+* src-8000x2000.jpg for 3 monitors
+* src-2048x2048.jpg for mobile devices
+* sig.png for signature (256x80)
+
+Tweak those to your liking.
