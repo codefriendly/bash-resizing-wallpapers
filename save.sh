@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ## This is a script to save multiple sizes for a wallpaper from a number of source files
 ## Run it with arguments, see help() function for the list of all possible arguments
